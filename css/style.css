@@ -176,6 +176,30 @@ body {
   opacity: 0.9;
 }
 
+.btn.curriculo {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn.curriculo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.btn.curriculo:hover::after {
+  transform: translateX(100%);
+}
+
 .skills-section {
   padding: 100px 20px;
   background: #0b0b123a;

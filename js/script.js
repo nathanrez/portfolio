@@ -14,4 +14,9 @@ document.querySelectorAll(".nav a").forEach(link => {
 });
 });
 
-
+function downloadCV() {
+    const link = document.createElement("a");
+    link.href = "assets/docs/NathanRezende_Curriculo";
+    link.download = "NathanRezende_Curriculo.pdf";
+    link.click();
+}

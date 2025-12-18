@@ -64,15 +64,31 @@ body {
   gap: 2rem;
 }
 
-.nav a {
-  text-decoration: none;
+.nav .nav-link {
+  background: none;
+  border: none;
+  padding: 0;
+
+  font: inherit;
   color: var(--text);
   font-weight: 600;
-  transition: color .3s;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav .nav-link:hover {
+  color: var(--accent);
 }
 
 .nav a:hover {
   color: var(--accent);
+}
+
+.nav .nav-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
 /* MENU HAMBURGUER */
@@ -387,3 +403,98 @@ body {
   }
 }
 
+/* ===== MODAL SOBRE ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 15, 0.75);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  z-index: 2000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  background: linear-gradient(135deg, #141428, #0f0f1a);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 85vh;
+
+  overflow-y: auto;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal {
+  transform: scale(1);
+}
+
+/* TÍTULO */
+.modal h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEXTO */
+.modal p {
+  color: #d1d5db;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+/* BOTÃO FECHAR */
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+
+  background: none;
+  border: none;
+
+  font-size: 1.8rem;
+  color: #9ca3af;
+  cursor: pointer;
+
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+  .modal {
+    padding: 28px 22px;
+  }
+
+  .modal h2 {
+    font-size: 1.6rem;
+  }
+}

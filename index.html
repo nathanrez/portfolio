@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathan Rezende | Dev</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -33,9 +33,9 @@
 
         <nav class="nav" id="nav">
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><button id="btnSobre" class="nav-link">Sobre</button></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="mailto:nathanrezs@gmail.com" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -45,7 +45,7 @@
 <section class="about">
     <div class="container">
         <div>
-            <img src="assets/img/eu.png" alt="Foto de perfil">
+            <img src="assets/img/eu.png" alt="Foto de Nathan Rezende">
             </div>
 
         <div>
@@ -67,7 +67,7 @@
   <div class="skill-grid">
     <div class="skill-card">
       <h3>💻 Front-end</h3>
-      <p>Angular, HTML, CSS e TypeScript — interfaces dinâmicas, responsivas e bem estruturadas.</p>
+      <p>HTML, CSS, JavaScript, TypeScript e Angular — interfaces dinâmicas, responsivas e bem estruturadas.</p>
     </div>
 
     <div class="skill-card">
@@ -96,12 +96,17 @@
             <div class="card">
                 <p>Lista de Tarefas</p>
                 <img class="project-print" src="assets/img/to-do-list.png" alt="Print do projeto">
+                <p>HTML, CSS, JavaScript</p>
                 <a href="https://nathanrez.github.io/to-do-listJS/"
                     target="_blank"
                     class="project-link">Ver projeto</a>
             </div>
-            <div class="card">Projeto 2</div>
-            <div class="card">Projeto 3</div>
+            <div class="card">
+                <p>Em desenvolvimento</p>
+            </div>
+            <div class="card">
+                <p>Em desenvolvimento</p>
+            </div>
         </div>
     </div>
 </section>
@@ -111,6 +116,17 @@
     <p>&copy; 2025 Nathan Rezende. Todos os direitos reservados.</p>
 </footer>
 
+<div class="modal-overlay" id="sobreModal" aria-hidden="true">
+  <div class="modal">
+    <button class="modal-close" aria-label="Fechar">×</button>
 
+    <h2>Sobre mim</h2>
+
+    <p>Sou desenvolvedor com foco em entregar soluções bem estruturadas, claras e com qualidade. Antes de partir para a implementação, gosto de entender o problema por completo, buscando criar algo que seja fácil de manter e realmente útil para quem utiliza o sistema.</p>
+    <p>Atuo com desenvolvimento utilizando Angular, Java Spring e Banco de Dados, e venho evoluindo constantemente minha forma de pensar código. Há alguns meses eu apenas replicava soluções; hoje, meu foco está em construir com mais consciência, organização e aprendizado em cada etapa do processo.</p>
+    <p>Valorizo código organizado, nomes claros e soluções reutilizáveis, mesmo entendendo que isso é uma construção contínua. Gosto de trabalhar em equipe, compartilhar conhecimento e aprender com outras pessoas, mas também tenho autonomia para estudar, pesquisar e evoluir de forma independente.</p>
+    <p>Acredito que a tecnologia está presente em todas as áreas da nossa vida e que sistemas bem feitos podem gerar impacto positivo. Busco me desenvolver como full stack, com foco em front-end, contribuindo de forma ativa em equipes e projetos que façam sentido.</p>
+  </div>
+</div>
 </body>
 </html>

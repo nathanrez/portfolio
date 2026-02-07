@@ -1,143 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathan Rezende | Dev</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
 
-    <link rel="icon" href="assets/img/favicon.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-<header class="header">
-    <div class="container header-content">
+  <body>
+    <header class="header">
+      <div class="container header-content">
         <a href="#" class="logo" aria-label="Nathan Rezende">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#4f46e5"/>
-                        <stop offset="100%" stop-color="#9333ea"/>
-                    </linearGradient>
-                </defs>
-            <text x="50%" y="55%" text-anchor="middle" font-size="48" font-family="Orbitron, sans-serif" fill="url(#grad)" font-weight="700">NR</text>
-            </svg>
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4f46e5" />
+                <stop offset="100%" stop-color="#9333ea" />
+              </linearGradient>
+            </defs>
+            <text
+              x="50%"
+              y="55%"
+              text-anchor="middle"
+              font-size="48"
+              font-family="Orbitron, sans-serif"
+              fill="url(#grad)"
+              font-weight="700"
+            >
+              NR
+            </text>
+          </svg>
         </a>
 
         <button class="menu-btn" id="menu-btn" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <nav class="nav" id="nav">
-            <ul>
-                <li><button id="btnSobre" class="nav-link">Sobre</button></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="mailto:nathanrezs@gmail.com" class="nav-link">Contato</a></li>
-            </ul>
+          <ul>
+            <li><button id="btnSobre" class="nav-link">Sobre</button></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li>
+              <a href="mailto:nathanrezs@gmail.com" class="nav-link">Contato</a>
+            </li>
+          </ul>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!-- about -->
-<section class="about">
-    <div class="container">
+    <!-- about -->
+    <section class="about">
+      <div class="container">
         <div>
-            <img src="assets/img/eu.png" alt="Foto de Nathan Rezende">
-            </div>
-
-        <div>
-            <h1>Olá, sou o <span>Nathan!</span></h1>
-            <p>Sou um desenvolvedor que está sempre buscando evoluir, focado em entender como as coisas funcionam e me esforçando para criar soluções que realmente entregam valor. Hoje estudo e trabalho com Java, Angular e Banco de Dados, sempre buscando melhorar um pouco a cada linha de código.</p>
-
-            <div class="social-buttons">
-                <a href="https://www.linkedin.com/in/nathan-rezende-b9143426b" target="_blank" class="btn linkedin">LinkedIn</a>
-                <a href="https://github.com/nathanrez" target="_blank" class="btn github">GitHub</a>
-                <a href="assets/docs/nathanrezende_curriculo.pdf" download="nathanrezende_curriculo.pdf" class="btn curriculo">Currículo</a>
-                <a href="mailto:nathanrezs@gmail.com" class="btn email">Contato</a>
-            </div>
+          <img src="assets/img/eu.png" alt="Foto de Nathan Rezende" />
         </div>
-    </div>
-</section>
 
-<section id="skills" class="skills-section">
-  <h2>Minhas Skills</h2>
-  <div class="skill-grid">
-    <div class="skill-card">
-      <h3>💻 Front-end</h3>
-      <p>HTML, CSS, JavaScript, TypeScript e Angular — interfaces dinâmicas, responsivas e bem estruturadas.</p>
-    </div>
+        <div>
+          <h1>Olá, sou o <span>Nathan!</span></h1>
+          <p>
+            Sou um desenvolvedor que está sempre buscando evoluir, focado em
+            entender como as coisas funcionam e me esforçando para criar
+            soluções que realmente entregam valor. Hoje estudo e trabalho com
+            Java, Angular e Banco de Dados, sempre buscando melhorar um pouco a
+            cada linha de código.
+          </p>
 
-    <div class="skill-card">
-      <h3>⚙️ Back-end</h3>
-      <p>Java e Spring Boot — APIs REST, lógica de negócio e integração com sistemas.</p>
-    </div>
+          <div class="social-buttons">
+            <a
+              href="https://www.linkedin.com/in/nathan-rezende-b9143426b"
+              target="_blank"
+              class="btn linkedin"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/nathanrez"
+              target="_blank"
+              class="btn github"
+              >GitHub</a
+            >
+            <a
+              href="assets/docs/nathanrezende_curriculo.pdf"
+              download="nathanrezende_curriculo.pdf"
+              class="btn curriculo"
+              >Currículo</a
+            >
+            <a href="mailto:nathanrezs@gmail.com" class="btn email">Contato</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="skill-card">
-      <h3>🗄️ Banco de Dados</h3>
-      <p>SQL, MySQL e PostgreSQL — modelagem, consultas otimizadas e integração com aplicações.</p>
-    </div>
+    <section id="skills" class="skills-section">
+      <h2>Minhas Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>💻 Front-end</h3>
+          <p>
+            HTML, CSS, JavaScript, TypeScript e Angular — interfaces dinâmicas,
+            responsivas e bem estruturadas.
+          </p>
+        </div>
 
-    <div class="skill-card">
-      <h3>🧩 Ferramentas</h3>
-      <p>Git, VSCode e Postman — versionamento e produtividade no dia a dia.</p>
-    </div>
-  </div>
-</section>
+        <div class="skill-card">
+          <h3>⚙️ Back-end</h3>
+          <p>
+            Java e Spring Boot — APIs REST, lógica de negócio e integração com
+            sistemas.
+          </p>
+        </div>
 
+        <div class="skill-card">
+          <h3>🗄️ Banco de Dados</h3>
+          <p>
+            Oracle SQL e PostgreSQL — modelagem, consultas otimizadas e
+            integração com aplicações.
+          </p>
+        </div>
 
-<!-- PROJETOS -->
-<section id="projetos" class="section dark">
-    <div class="container">
+        <div class="skill-card">
+          <h3>🧩 Ferramentas</h3>
+          <p>
+            Git, VSCode e Postman — versionamento e produtividade no dia a dia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section dark">
+      <div class="container">
         <h2>Projetos</h2>
         <div class="grid">
-            <div class="card">
-                <p>Lista de Tarefas</p>
-                <img class="project-print" src="assets/img/to-do-list.png" alt="Print do projeto">
-                <p>HTML, CSS, JavaScript</p>
-                <a href="https://nathanrez.github.io/to-do-listJS/"
-                    target="_blank"
-                    class="project-link">Ver projeto</a>
-            </div>
-            <div class="card">
-                <p>Jogo da Memória</p>
-                <img class="project-print" src="assets/img/memory-game.png" alt="Print do projeto">
-                <p>HTML, CSS, JavaScript</p>
-                <a href="https://nathanrez.github.io/memory-gameJS/"
-                    target="_blank"
-                    class="project-link">Ver projeto</a>
-            </div>
-            <div class="card">
-                <p>App Controle Financeiro</p>
-                <img class="project-print" src="assets/img/finan-control.png" alt="Print do projeto">
-                <p>HTML, CSS, JavaScript</p>
-                <a href="https://nathanrez.github.io/finan-control/"
-                    target="_blank"
-                    class="project-link">Ver projeto</a>
-            </div>
+          <div class="card">
+            <p>Calculadora</p>
+            <img
+              class="project-print"
+              src="assets/img/calculator.png"
+              alt="Print do projeto"
+            />
+            <p>HTML, CSS, TypeScript</p>
+            <a
+              href="https://nathanrez.github.io/calculator-ts/"
+              target="_blank"
+              class="project-link"
+              >Ver projeto</a
+            >
+          </div>
+          <div class="card">
+            <p>Jogo da Memória</p>
+            <img
+              class="project-print"
+              src="assets/img/memory-game.png"
+              alt="Print do projeto"
+            />
+            <p>HTML, CSS, JavaScript</p>
+            <a
+              href="https://nathanrez.github.io/memory-gameJS/"
+              target="_blank"
+              class="project-link"
+              >Ver projeto</a
+            >
+          </div>
+          <div class="card">
+            <p>App Controle Financeiro</p>
+            <img
+              class="project-print"
+              src="assets/img/finan-control.png"
+              alt="Print do projeto"
+            />
+            <p>HTML, CSS, JavaScript</p>
+            <a
+              href="https://nathanrez.github.io/finan-control/"
+              target="_blank"
+              class="project-link"
+              >Ver projeto</a
+            >
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2026 Nathan Rezende. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="modal-overlay" id="sobreModal" aria-hidden="true">
+      <div class="modal">
+        <button class="modal-close" aria-label="Fechar">×</button>
+
+        <h2>Sobre mim</h2>
+
+        <p>
+          Sou desenvolvedor com foco em entregar soluções bem estruturadas,
+          claras e com qualidade. Antes de partir para a implementação, gosto de
+          entender o problema por completo, buscando criar algo que seja fácil
+          de manter e realmente útil para quem utiliza o sistema.
+        </p>
+        <p>
+          Atuo com desenvolvimento utilizando Angular, Java Spring e Banco de
+          Dados, e venho evoluindo constantemente minha forma de pensar código.
+          Há alguns meses eu apenas replicava soluções; hoje, meu foco está em
+          construir com mais consciência, organização e aprendizado em cada
+          etapa do processo.
+        </p>
+        <p>
+          Valorizo código organizado, nomes claros e soluções reutilizáveis,
+          mesmo entendendo que isso é uma construção contínua. Gosto de
+          trabalhar em equipe, compartilhar conhecimento e aprender com outras
+          pessoas, mas também tenho autonomia para estudar, pesquisar e evoluir
+          de forma independente.
+        </p>
+        <p>
+          Acredito que a tecnologia está presente em todas as áreas da nossa
+          vida e que sistemas bem feitos podem gerar impacto positivo. Busco me
+          desenvolver como full stack, com foco em front-end, contribuindo de
+          forma ativa em equipes e projetos que façam sentido.
+        </p>
+      </div>
     </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <p>&copy; 2025 Nathan Rezende. Todos os direitos reservados.</p>
-</footer>
-
-<div class="modal-overlay" id="sobreModal" aria-hidden="true">
-  <div class="modal">
-    <button class="modal-close" aria-label="Fechar">×</button>
-
-    <h2>Sobre mim</h2>
-
-    <p>Sou desenvolvedor com foco em entregar soluções bem estruturadas, claras e com qualidade. Antes de partir para a implementação, gosto de entender o problema por completo, buscando criar algo que seja fácil de manter e realmente útil para quem utiliza o sistema.</p>
-    <p>Atuo com desenvolvimento utilizando Angular, Java Spring e Banco de Dados, e venho evoluindo constantemente minha forma de pensar código. Há alguns meses eu apenas replicava soluções; hoje, meu foco está em construir com mais consciência, organização e aprendizado em cada etapa do processo.</p>
-    <p>Valorizo código organizado, nomes claros e soluções reutilizáveis, mesmo entendendo que isso é uma construção contínua. Gosto de trabalhar em equipe, compartilhar conhecimento e aprender com outras pessoas, mas também tenho autonomia para estudar, pesquisar e evoluir de forma independente.</p>
-    <p>Acredito que a tecnologia está presente em todas as áreas da nossa vida e que sistemas bem feitos podem gerar impacto positivo. Busco me desenvolver como full stack, com foco em front-end, contribuindo de forma ativa em equipes e projetos que façam sentido.</p>
-  </div>
-</div>
-</body>
+  </body>
 </html>
